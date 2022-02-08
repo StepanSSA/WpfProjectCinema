@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model1StoreContainer" CdmEntityContainer="Model1Container">
+    <EntitySetMapping Name="HallsSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Halls)">
+        <MappingFragment StoreEntitySet="HallsSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="idCinema" ColumnName="idCinema" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="FreeSeats" ColumnName="FreeSeats" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FilmsSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Films)">
+        <MappingFragment StoreEntitySet="FilmsSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SessionSet1">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Session)">
+        <MappingFragment StoreEntitySet="SessionSet1">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="idFilm" ColumnName="idFilm" />
+          <ScalarProperty Name="idHall" ColumnName="idHall" />
+          <ScalarProperty Name="IdCinema" ColumnName="IdCinema" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="sessionTime" ColumnName="sessionTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CinemasSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Cinemas)">
+        <MappingFragment StoreEntitySet="CinemasSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Addres" ColumnName="Addres" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="HallsQuantity" ColumnName="HallsQuantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CinemaSessionSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.CinemaSession)">
+        <MappingFragment StoreEntitySet="CinemaSessionSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="idFilm" ColumnName="idFilm" />
+          <ScalarProperty Name="idHall" ColumnName="idHall" />
+          <ScalarProperty Name="idCinema" ColumnName="idCinema" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="sessionTime" ColumnName="sessionTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

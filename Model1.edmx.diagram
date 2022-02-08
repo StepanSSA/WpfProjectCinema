@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="54e5e344dbec4c7a80c7878e54c20771" Name="Diagram1" ZoomLevel="108" >
+        <EntityTypeShape EntityType="Model1.Cinemas" Width="1.5" PointX="8.5" PointY="0.5" />
+        <EntityTypeShape EntityType="Model1.Halls" Width="1.5" PointX="5.625" PointY="0.5" />
+        <EntityTypeShape EntityType="Model1.Films" Width="1.5" PointX="2.875" PointY="0.5" />
+        <EntityTypeShape EntityType="Model1.FilmsNCinemas" Width="1.5" PointX="5.625" PointY="4" />
+        <AssociationConnector Association="Model1.FilmsFilmsNCinemas" />
+        <AssociationConnector Association="Model1.HallsFilmsNCinemas" />
+        <AssociationConnector Association="Model1.CinemasFilmsNCinemas" />
+        <AssociationConnector Association="Model1.CinemasHalls" />
+        <EntityTypeShape EntityType="Model1.CinemaSession" Width="1.5" PointX="5.625" PointY="3.5" />
+        <AssociationConnector Association="Model1.CinemasCinemaSession" />
+        <AssociationConnector Association="Model1.HallsCinemaSession" />
+        <AssociationConnector Association="Model1.FilmsCinemaSession" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
